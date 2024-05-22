@@ -1,0 +1,99 @@
+/* Estilos generales */
+
+/* Resetear estilos por defecto */
+* {
+    font-family: Omnibus-Type, sans-serif;
+}
+
+/* Estilo para los títulos de sección con la clase "titulo-seccion" */
+h2 {
+    font-family: "Times New Roman", serif;
+}
+
+/* Estilos de cuerpo y tipografía */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Estructura de encabezados */
+h1 {
+    font-family: Georgia, serif;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: blue;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+/* Estilos de enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de listas */
+ul,
+ol {
+    margin-bottom: 1em;
+}
+
+/* Estilos de contenedores */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#section {
+    background-color: #007bff;
+}
+
+
+/* Estilos de secciones */
+.section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: aqua;
+    border: 1px solid #ccc;
+}
+
+/* Estilos de pies de página */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.section {
+    box-sizing: border-box;
+    margin: 20px;
+    border: 1px solid black;
+    
+}
+
+/* Set the margin for all sides of the section element */
+
+
+/* Set the margin for each side of the section element individually */
+.section {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
