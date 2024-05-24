@@ -1,99 +1,46 @@
 /* Estilos generales */
-
-/* Resetear estilos por defecto */
-* {
-    font-family: Omnibus-Type, sans-serif;
-}
-
-/* Estilo para los títulos de sección con la clase "titulo-seccion" */
-h2 {
-    font-family: "Times New Roman", serif;
-}
-
-/* Estilos de cuerpo y tipografía */
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
+    background-color: #3625a0; /* Cambia este valor al color que desees */
+    margin: 0; /* Para asegurar que no haya márgenes predeterminados */
+    padding: 0; /* Para asegurar que no haya relleno predeterminado */
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/* styles.css */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
 }
 
-/* Estructura de encabezados */
-h1 {
-    font-family: Georgia, serif;
-    font-size: 2em;
-    margin-bottom: 0.5em;
-    color: blue;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-h2 {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
+nav ul li {
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
 }
 
-h3 {
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-}
-
-/* Estilos de enlaces */
-a {
-    color: #007bff;
+nav ul li a {
+    color: white;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+nav ul li:hover {
+    box-shadow: 0 4px 8px rgba(243, 243, 245, 0.803); /* Sombra al pasar el cursor */
+    background-color: #555; 
 }
 
-/* Estilos de listas */
-ul,
-ol {
-    margin-bottom: 1em;
-}
-
-/* Estilos de contenedores */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-#section {
-    background-color: #007bff;
-}
-
-
-/* Estilos de secciones */
-.section {
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: aqua;
-    border: 1px solid #ccc;
-}
-
-/* Estilos de pies de página */
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-}
-
-.section {
-    box-sizing: border-box;
-    margin: 20px;
-    border: 1px solid black;
-    
-}
-
-/* Set the margin for all sides of the section element */
-
-
-/* Set the margin for each side of the section element individually */
-.section {
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-    margin-left: 40px;
+link{
+    color: rgb(8, 8, 8);
+    text-decoration: none;
 }
