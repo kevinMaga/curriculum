@@ -1,6 +1,6 @@
 body {
     flex-direction: column;
-    background-color: rgb(224, 224, 224);
+    background-color: #e4e3e3;
     margin: 0;
     padding: 0;
     /* Para asegurar que no haya relleno predeterminado */
@@ -10,45 +10,27 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     padding: 0;
-    
 }
-
-/* styles.css */
 nav {
+    /*display: block;
+    unicode-bidi: isolate;*/
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #93a9b8;
+    justify-content: space-around;
+    background-color: #ffffff; /* Color de fondo de la barra de navegación */
     padding: 10px;
 }
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 50px;
-    margin-right: 50px;
-    transition: box-shadow 0.3s ease;
-    /* Transición suave para la sombra */
-}
-
-nav ul li a {
-    color: rgb(0, 0, 0);
+nav a {
     text-decoration: none;
+    color: #000; /* Color del texto */
+    padding: 10px 20px;
+    border-radius: 15px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    font-size: 18px; /* Tamaño de fuente más grande */
+    margin: 0 15px; /* Separación entre las palabras */
 }
-
-nav ul li:hover {
-    box-shadow: 0 4px 8px rgba(243, 243, 245, 0.803);
-    /* Sombra al pasar el cursor */
-}
-
-link {
-    color: rgb(8, 8, 8);
-    text-decoration: none;
+nav a:hover {
+    background-color: #1a3e4c; /* Color de fondo al pasar el ratón */
+    color: #fff; /* Color del texto al pasar el ratón */
 }
 .header{
     display: flex;
@@ -99,5 +81,42 @@ h3{
     text-align: center;
     color: #ffffff;
     font-family: "Source Code Pro", monospace;
+}
+h2{
+    color: #d76b1d;
+    text-align: center;
+}
+body>section {
+    margin-block-start: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px 30px;
+}
+.body-section{
+    display: flex;
+    padding: 25px;
+    align-items: stretch;
+    justify-content: space-between;
+    background-color:#ffffff;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 133, 0.3);
+}
+#habilidades{
+    flex-basis: 10%;
+    flex-wrap: 40%;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    row-gap: 50px;
+    justify-content: center;
+}
+#inicio{
+
+}
+#educacion{
+    flex-basis: 40%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction:column;
+    row-gap: 25px;
 }
 
