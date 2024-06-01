@@ -324,7 +324,7 @@ p {
 .habilidades-iconos{
     margin: 0px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     place-items: center;
     gap: 10px;
 }
