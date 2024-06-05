@@ -34,6 +34,10 @@ nav a {
     margin: 0 15px;
 }
 
+a{
+    text-decoration: none;
+}
+
 nav a:hover {
     background-color: #1a3e4c;
     color: #fff;
@@ -143,7 +147,6 @@ body>section {
 .body-section {
     padding: 25px;
     align-items: center;
-    justify-content: center;
     background-color: #ffffff;
     box-shadow: 10px 10px 10px 1px rgba(0, 0, 133, 0.3);
 }
@@ -180,7 +183,7 @@ p {
     grid-template-columns: repeat(6, 1fr);
 }
 
-.main-inicio h2 {
+.main-inicio .titulo {
     grid-column: 1 / 7;
     grid-row: 2 / 2;
 }
@@ -225,7 +228,7 @@ p {
 }
 
 #educacion {
-    flex-basis: 20%;
+    flex-basis: 10%;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -292,11 +295,10 @@ p {
 
 #habilidades {
     flex-basis: 10%;
-    flex-wrap: 40%;
     flex-grow: 1;
     display: flex;
     flex-flow: column;
-    row-gap: 50px;
+    row-gap: 25px;
     justify-content: center;
     background-color: #9FC2F6;
     border-radius: 40px 20px;
@@ -340,6 +342,105 @@ p {
     margin-block-start: 20px;
     align-items: center;
     display: flex;
+    background-color: #FBD658;
+}
+.main-experiencia{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 10px;
+}
+
+.imagen-trabajo1{
+    background-color: #fff;
+    place-items: center;
+    display: grid;
+    border-radius: 20px;
+}
+.trabajo1{
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+}
+.trabajo2{
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+}
+.trabajo3{
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+}
+
+#proyectos{
+    flex-basis: 20%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    background-color: #93a9b8;
+}
+
+.proyectos-img{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 10px;
+}
+.proyecto{
+    width: 290px;
+    height: 200px;
+    border-radius: 10px;
+}
+#contacto{
+    flex-basis: 20%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    background-color: #9FC2F6;
+
+}
+.formulario{
+    width: 80%;
+    height: 25px;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 25px;
+    background-color: #bec1c3;
+    border: 1px solid #4d4d4d;
+    font-family: "Nunito", sans-serif;
+}
+#enviar{
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    background-color: #614fff;
+    border-radius: 20px;
+    color: #fff;
+    border-color: #9FC2F6;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+}
+.plantilla{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    gap: 10px;
+}
+
+#localizacion{
+    flex-basis: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
     background-color: #FBD658;
 }
 
