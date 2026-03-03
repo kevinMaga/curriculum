@@ -1,189 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <title>Currículum Vitae</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Inicio, Educacion, Habilidades, Experiencia, Proyectos, Certificaciones, Contacto">
-    <meta name="description"
-        content="Muestra informacion en base a mi carrear en lo que me estoy especializando. Con objetivo de que se bastante claro para la persona ver mis conocientos">
-    <meta name="author" content="Kevin Ricardo Magallanes Arevalo">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="stylesheets\style.css">
+    <title>Mi CV Profesional | Diseño Web</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div>
-        <header class="header" id="header">
-            <div>
-                <h1>Kevin Magallanes</h1>
-                <h3>"Si puedes imaginarlo puedes programarlo"</h3>
+    <div class="cv-container">
+        <aside class="sidebar">
+            <div class="profile-img">
+                <img src="img/kevin-magallanes.jpg" alt="Kevin Magallanes">
             </div>
-            <figure class="header_figure"><img src="Imagenes/imagen.jpg"></figure>
-        </header>
-        <nav>
-            <div>
-                <a href="#inicio">Información</a>
-                <a href="#educacion">Educación</a>
-                <a href="#habilidades">Habilidades tecnicas</a>
-                <a href="#experiencia">Experiencia laboral</a>
-                <a href="#proyectos">Proyectos</a>
-                <a href="#contacto">Contacto</a>
-                <a href="#localizacion">Localizacion</a>
-            </div>
-        </nav>
+            <section class="contact">
+                <h3>Contacto</h3>
+                <p>📧 kevinmagaare@gmail.com</p>
+                <p>📍 Guayaquil, Ecuador</p>
+                <p>🔗 <a href="https://www.linkedin.com/in/kevin-magallanes-arevalo-a574b3362/">Linkedin/Kevin Magallanes</a></p>
+            </section>
+            <section class="skills">
+                <h3>Base de datos</h3>
+                <div class="skill-tag">MySQL</div>
+                <div class="skill-tag">PostgreSQL</div>
+                <div class="skill-tag">SQL Server</div>
+            </section>
+            <section class="skills">
+                <h3>Backend</h3>
+                <div class="skill-tag">JavaScript</div>
+                <div class="skill-tag">TypeScript</div>
+                <div class="skill-tag">Python</div>
+                <div class="skill-tag">PHP</div>
+            </section>
+            <section class="skills">
+                <h3>Frontend</h3>
+                <div class="skill-tag">React</div>
+                <div class="skill-tag">Django</div>
+                <div class="skill-tag">Angular</div>
+                <div class="skill-tag">Node.js</div>
+            </section>
+            <section class="skills">
+                <h3>UI/UX</h3>
+                <div class="skill-tag">Figma</div>
+                <div class="skill-tag">Overleaf - Latex</div>
+                <div class="skill-tag">Illustrador</div>
+                <div class="skill-tag">Canvas</div>
+            </section>
+            <section class="skills">
+                <h3>Lenguajes de programación</h3>
+                <div class="skill-tag">C++</div>
+                <div class="skill-tag">visual basic</div>
+                <div class="skill-tag">AppScript</div>
+            </section>
+            <section class="skills">
+                <h3>Herramientas de datos</h3>
+                <div class="skill-tag">Power BI</div>
+                <div class="skill-tag">Loocker Studio</div>
+                <div class="skill-tag">Servicios de Gooegle AppSheet</div>
+                <div class="skill-tag">SAP</div>
+            </section>
+        </aside>
 
+        <main class="main-content">
+            <header>
+                <h1>KEVIN RICARDO MAGALLANES AREVALO</h1>
+                <h2>Ingeniero en Sistemas | Diseñador Web</h2>
+            </header>
+
+            <section class="experience">
+                <h3>Experiencia Destacada</h3>
+                <div class="card">
+                    <h4>Desarrollador Web - Proyecto Solinal</h4>
+                    <p class="date">Enero 2026 - Presente</p>
+                    <p>Implementación de aplicaciones web con enfoque en experiencia de usuario y optimización de bases de datos.</p>
+                </div>
+            </section>
+
+            <section class="projects">
+                <h3>Proyectos Recientes</h3>
+                <div class="project-grid">
+                    <div class="card project-card" onclick="revealProject(this)">
+                        <h4>Gestión de Alimentos</h4>
+                        <p>App para gestión de inventarios en entornos laborales.</p>
+                    </div>
+                    <div class="card project-card" onclick="revealProject(this)">
+                        <h4>TAME UI Redesign</h4>
+                        <p>Rediseño de interfaz enfocado en accesibilidad.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
-
-    <section id="inicio" class="body-section">
-
-        <main class="main-inicio">
-            <a href="#header" class="titulo">
-                <h2>Información</h2>
-            </a>
-            <div id="informacion__div--left">
-                <h4 class="parablas-inicio">Nombres</h4>
-                <p class="parablas-inicio">Kevin Ricardo</p>
-                <h4 class="parablas-inicio">Apellidos</h4>
-                <p class="parablas-inicio">Magallanes</p>
-                <h4 class="parablas-inicio">Edad</h4>
-                <p class="parablas-inicio">21 años</p>
-            </div>
-            <figure class="perfil"><img class="img2" src="Imagenes/kevin.jpeg"></figure>
-            <div id="informacion__div--rigth">
-                <h4 class="parablas-inicio">Telefono</h4>
-                <p class="parablas-inicio">+593 968933048</p>
-                <h4 class="parablas-inicio">Email</h4>
-                <p class="parablas-inicio">kerimaga@espol.edu.ec</p>
-                <h4 class="parablas-inicio">Ubicación</h4>
-                <p class="parablas-inicio">Guayaquil-Ecuador</p>
-            </div>
-            <p class="parrafo1">La ingeniería en computación es más que una carrera para mí; es una pasión que define
-                quién soy. Desde la primera vez que desarmé una computadora y vi la complejidad de sus componentes, supe
-                que había encontrado mi vocación. Me fascina cómo los principios teóricos se convierten en soluciones
-                prácticas que transforman nuestra vida cotidiana. La emoción de resolver problemas complejos, la
-                creatividad necesaria para desarrollar software innovador y la constante evolución de la tecnología me
-                mantienen siempre motivado. Cada desafío que enfrento en esta disciplina es una oportunidad para
-                aprender, crecer y contribuir a un mundo cada vez más interconectado y digitalizado. La ingeniería en
-                computación no solo es mi carrera, sino mi motor y mi inspiración diaria.</p>
-        </main>
-    </section>
-    <section id="educacion" class="body-section">
-        <a href="#header">
-            <h2>Educación</h2>
-        </a>
-        <main class="main-educacion">
-            <h4 id="primaria">Primaria</h4>
-            <h4 id="secundaria">Secundaria</h4>
-            <figure class="imagen-primaria"><img class="primaria" src="Imagenes/institucion.png" alt="intituciones">
-            </figure>
-            <div class="educacion1">
-                <p>Unidad Educativa Filadelfia</p>
-                <p>Unidad Educativa Pedro Vicente Maldonado</p>
-            </div>
-            <figure class="imagen-secundaria"><img class="secundaria" src="Imagenes/colegio.png" alt="intituciones">
-            </figure>
-            <div class="educacion2">
-                <p>Unidad Educativa Gral. Baden Powel</p>
-                <p>Unidad Educativa Nuevo Guayaquil</p>
-            </div>
-        </main>
-    </section>
-    <section id="habilidades" class="body-section">
-        <a href="#header">
-            <h2>Habilidades</h2>
-        </a>
-        <section class="habilidades-iconos">
-            <div class="iconos"><img class="logo" src="Imagenes/html.png"></div>
-            <div class="iconos"><img class="logo" src="Imagenes/css.png"></div>
-            <div class="iconos"><img class="logo" src="Imagenes/java.jpg"></div>
-            <div class="iconos"><img class="logo" src="Imagenes/c++.png"></div>
-            <div class="iconos"><img class="logo" src="Imagenes/netbeans.png"></div>
-            <div class="iconos"><img class="logo" src="Imagenes/mysql.jpg"></div>
-            <div class="iconos"><img class="logo" src="Imagenes/python.jpg"></div>
-            <div class="iconos"><img class="logo" src="Imagenes/visual.png"></div>
-        </section>
-    </section>
-    <section id="experiencia" class="body-section">
-        <a href="#header">
-            <h2>Experiencia laboral</h2>
-        </a>
-        <main class="main-experiencia">
-            <h4 id="trabajo">El Barata</h4>
-            <h4 id="trabajo">Telconet</h4>
-            <h4 id="trabajo">Laboratorios de ESPOL</h4>
-            <figure class="imagen-trabajo1"><img class="trabajo1" src="Imagenes/barata.png" alt="intituciones"></figure>
-            <figure class="imagen-trabajo1"><img class="trabajo2" src="Imagenes/Telconet.png" alt="intituciones">
-            </figure>
-            <figure class="imagen-trabajo1"><img class="trabajo3" src="Imagenes/espol.png" alt="intituciones"></figure>
-            <div class="educacion1">
-                <p>Asistente del departamento de sistemas</p>
-            </div>
-            <div class="educacion2">
-                <p>Asistente tecnico</p>
-            </div>
-            <div class="educacion2">
-                <p>Ayudante de laboratorios de FIEC</p>
-            </div>
-        </main>
-    </section>
-    <section id="proyectos" class="body-section">
-        <a href="#header">
-            <h2>Proyectos</h2>
-        </a>
-        <section class="proyectos-img">
-            <iframe class="proyecto" src="https://www.youtube.com/embed/iIfPqus_eok?si=If_xBaEinMQvXxsZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <img class="proyecto" src="Imagenes/proyecto1.png">
-            <img class="proyecto" src="Imagenes/proyecto3.png">
-            <img class="proyecto" src="Imagenes/proyecto2.png">
-        </section>
-    </section>
-    <section id="contacto" class="body-section">
-        <a href="#header">
-            <h2>Contacto</h2>
-        </a>
-
-        <form class="plantilla">
-            <input type="text" class="formulario" id="name" placeholder="Nombre">
-            <input type="correo" class="formulario" id="email" placeholder="Correo">
-            <textarea class="formulario" id="mensaje" placeholder="Mensaje"
-                style="width: 80%; height: 100px;"></textarea>
-            <input type="submit" class="btnEnviar" value="Enviar" id="enviar">
-        </form>
-
-
-    </section>
-    <section id="localizacion" class="body-section">
-        <a href="#header"><h2>Localizacion</h2></a>
-        <iframe class="map__iframe"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.023651934657!2d-79.97045872618753!3d-2.1446259978362723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses-419!2sec!4v1697418872847!5m2!1ses-419!2sec"
-            height="400" width="900" style="border: 0" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-
-
-    <footer>
-        <p>Copyright © 2024 Kevin Magallanes</p>
-    </footer>
+    <script src="js/script.js"></script>
 </body>
-
 </html>
